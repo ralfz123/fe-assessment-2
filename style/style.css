@@ -18,7 +18,7 @@ body {
     font-weight: 100;
     text-align: center;
     padding: 10px;
-    background-image: url("img/backgroundmobile3.jpg");
+    background-image: url("../img/backgroundmobile3.jpg");
     background-repeat: repeat-y;
 
 }
@@ -26,7 +26,7 @@ body {
 /* iPad Body */
 @media only screen and (min-width: 400px) {
     body {
-        background-image: url("img/background2.jpg");
+        background-image: url("../img/background2.jpg");
         background-size: 110%;
         background-repeat: no-repeat;
 
@@ -37,7 +37,7 @@ body {
 /* Desktop Body */
 @media only screen and (min-width: 600px) {
     body {
-        background-image: url("img/background2.jpg");
+        background-image: url("../img/background2.jpg");
         background-size: 110%;
         background-repeat: no-repeat;
         overflow: hidden;
@@ -90,7 +90,7 @@ h4{
 
 .profileheader{
     background-image: linear-gradient(#B8456E, #FA4E6A);
-    box-shadow: 0 6px 11px 6px rgba(0,0,0,0.25);
+    box-shadow: 4px 5px 6px rgba(0,0,0,0.25);
     /* z-index: 10; */
     padding: 50px 0px;
     border-radius: 10px;
@@ -99,6 +99,7 @@ h4{
     /* width: 100vw; */
     /* padding-bottom: 140px; */
     height: 218px;
+    margin-bottom: 1rem;
 }
 
  /* .profileheader > img{
@@ -124,6 +125,7 @@ h4{
 
 .profileheader > img {
     width: 30%;
+    height: 30%;
     margin: 0;
     background-color: steelblue;
     border-radius: 50%;
@@ -220,8 +222,6 @@ fieldset {
     font-size: 1.5rem;
 
 }
-
-
 /********************
     form profile page
 ********************/
@@ -230,8 +230,105 @@ fieldset {
     text-align: left;
     margin: 0;
     padding: 0;
+    width: 80vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
 }
 
+.profileform label {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem;
+
+}
+
+.profileform label:nth-child(6){
+    color: #B8456E;
+}
+
+.profileform label.radioGender {
+    font-size: 1rem;
+    margin: 0px 2px;
+}
+
+.profileform input {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    height: 20%;
+    font-size: 1rem;
+    margin-right: 1em;
+    margin-left: 0.3em;
+    margin-bottom: 1em;
+}
+
+.profileform input[type="radio"] {
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    padding-top: 1.6em;
+
+}
+
+.profileform input:nth-child(7) {
+    color: blue;
+
+
+}
+
+.profileform input:focus {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 1em;
+    margin-left: 0.3em;
+    margin-bottom: 1em;
+    width: 30%;
+    /* height: 20%; */
+    color: #B8456E;
+    /* transition: ease-in 0.5s; */
+    /* transform: none; */
+    /* border: 1px solid transparent; */
+    border-bottom: 1px solid #FD2755;
+
+}
+
+.profileform input[type="radio"]:focus {
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    height: 15px; 
+    padding-top: 1.6em;   
+    color: #B8456E;
+    /* transition: ease-in 0.5s; */
+    /* transform: none; */
+    /* border: 2px solid #FD2755; */
+    outline: none;
+
+}
+
+
+
+.profileform a.enableButton {
+    background-color: #FA4E69;
+    border-radius: 10px;
+    margin: 0;
+    padding: 10px;
+    width: 20%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    box-shadow: 3px 3px 5px grey;
+    margin: 25px 50px 6px 50px;
+}
+
+.profileform input[type="text"]:disabled, .profileform input[type="radio"]:disabled, .profileform input[type="number"]:disabled, .profileform input[type="password"]:disabled {
+    background: rgb(204, 204, 204);
+}
 
 /********************
     MULTI STEP FORM
@@ -385,16 +482,9 @@ fieldset {
 
 
 
-fieldset.p1{
-    border: none;
-    display: flex;
-    text-align: left;
-    display: flex;
-}
 
-fieldset.p1 input::placeholder{
-    color: rgba(92, 92, 92, 0.5);
-}
+
+
 
 legend{
     display: none;
@@ -421,42 +511,8 @@ input[type="radio"].toggle {
 }
 
 
-form.p2 fieldset label{
-    max-width: 70%;
-    text-align: center;
-    /* background: red; */
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 50px 0px 10px 0px;
-    padding: 50px 0px 5px 0px;
-    border: 1px solid transparent;
-    /* border-bottom: 1px solid #FD2755; */
-    font-size: 1.7rem;
-    cursor: pointer;
-    /* font-family:omnes-pro, sans-serif; */
-    font-weight: 200;
-    margin: 0 auto;
-    /* margin:10px 0px; */
-    
-}
-form.p2 fieldset label:nth-child(6){
-    max-width: 70%;
-    text-align: center;
-    /* background: red; */
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 50px 0px 10px 0px;
-    padding: 50px 0px 5px 0px;
-    border: 1px solid transparent;
-    /* border-bottom: 1px solid #FD2755; */
-    font-size: 1.7rem;
-    cursor: pointer;
-    font-family:'Kalam';
-    font-weight: 200;
-    margin: 0 auto;
-    /* margin:10px 0px; */
-    
-}
+
+
 
 
 
@@ -472,22 +528,7 @@ form fieldset input{
     border-bottom: 1px solid #FD2755;
     font-size: 1rem;
 }
-form fieldset.p1 {
-    margin: 0px 20px;
-}   
 
-form fieldset.p1 .firsttype{
-    text-align: left;
-    /* background: blue; */
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 5px 50px 10px 5px;
-    border: 1px solid transparent;
-    border-bottom: 1px solid #FD2755;
-    font-size: 1rem;
-    cursor: pointer;
-}
 
 .container {
     display: block;
@@ -511,56 +552,25 @@ form fieldset.p1 .firsttype{
 
 
 
-form fieldset.p1 input[type="radio"]{
-  position: absolute;
-  opacity: 20;
-  cursor: pointer;
-  height: 25px;
-  width: 21px;
-  background-color: red;
-  margin-left: 50px;
-}
-form fieldset.p1 input[type="radio"]:focus{
-   box-shadow: none;
-  }
 
 
-form.p2 fieldset input{
-    text-align: left;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* margin: 0; */
-    padding: 5px 50px 10px 5px;
-    border: 1px solid transparent;
-    border-bottom: 1px solid #FD2755;
-    font-size: 1rem;
-    cursor: pointer;
-    
-}
 
 
-form.p2 fieldset input:focus{
-    border: 1px solid #FD2755;
-    outline: none;
-    transition: ease-in-out 0.3s;
-}
 
-form.p2 fieldset input::placeholder{
-    color: rgba(92, 92, 92, 0.5);
-}
+
+
+
+
+
 
 /* pseudo class voor interactie */
-form input:focus{
+form.registratepage input:focus, form.inlog input:focus {
     border: 1px solid #FD2755;
     outline: none;
     transition: ease-in-out 0.3s;
 }
 
-form input.firsttype:focus{
-    border: 1px solid #FD2755;
-    outline: none;
-    transition: ease-in-out 0.3s;
-}
+
 
 
 @media only screen and (min-width: 600px) {
@@ -576,27 +586,8 @@ form input.firsttype:focus{
         width: 30%;
         height: 50%;
     }
-    form.p2{
-        display: flex;
-    }
-    form.p2 fieldset {
-        margin-left: 68%;
-        width: 30%;
-        text-align: left;
-        /* background: blue; */
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: flex-end;
-        /* margin: 0; */
-        padding: 5px 50px 10px 5px;
-        /* border: 1px solid black; */
-        border-radius:10px;
-        box-shadow:  3px 3px 3px 3px #ccc;
-        /* 0 2px 7px 0 rgba(0,0,0,0.2) */
-        background: white;
-        font-size: 1rem;
-        cursor: pointer;
-    } 
+    
+     
     
 
 
@@ -610,7 +601,7 @@ form input.firsttype:focus{
 
 
 
-button{
+button {
     text-align: center;
     margin: auto;
     margin-top: 15px;
@@ -764,7 +755,7 @@ font-size: 1.2rem;
 
 }
 
-.registreer{
+.registreer {
     background-color: #FA4E69;
     border-radius: 10px;
     margin: 50px;
