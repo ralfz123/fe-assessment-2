@@ -1,0 +1,837 @@
+/* Mobile first */
+
+* {
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100vw;
+    background-color: white;
+    font-family: omnes-pro, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    padding: 10px;
+    background-image: url("img/backgroundmobile3.jpg");
+    background-repeat: repeat-y;
+
+}
+
+/* iPad Body */
+@media only screen and (min-width: 400px) {
+    body {
+        background-image: url("img/background2.jpg");
+        background-size: 110%;
+        background-repeat: no-repeat;
+
+        width: 100vw;
+    }
+}
+
+/* Desktop Body */
+@media only screen and (min-width: 600px) {
+    body {
+        background-image: url("img/background2.jpg");
+        background-size: 110%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        
+    }
+
+    .wrapper {
+        width: 100vw;
+
+    }
+    /* ALs ik deze uit zet is error goed maar de andere pages niet */
+    /* body main {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    } */
+}
+
+main{
+    height: 100%;
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+}
+
+h4{
+    margin-bottom: 20px;
+}
+
+.lid{
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-family: omnes-pro, sans-serif;
+    font-weight: 500;
+}
+
+.ondertitel {
+    font-family: omnes-pro, sans-serif;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.profileheader{
+    background-image: linear-gradient(#B8456E, #FA4E6A);
+    box-shadow: 0 6px 11px 6px rgba(0,0,0,0.25);
+    /* z-index: 10; */
+    padding: 50px 0px;
+    border-radius: 10px;
+    /* box-shadow:  3px 3px 3px 3px #ccc; */
+    /* display: flex; */
+    /* width: 100vw; */
+    /* padding-bottom: 140px; */
+    height: 218px;
+}
+
+ /* .profileheader > img{
+    width: 30%;
+    background-color: blue;
+    margin: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+} */
+
+.profileheader > p {
+    position: absolute;
+    z-index: 10;
+    color: white;
+    font-family: omnes-pro, sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    top: 0%;
+    padding: 0;
+    margin: 0;
+    left: 33%;
+}
+
+.profileheader > img {
+    width: 30%;
+    margin: 0;
+    background-color: steelblue;
+    border-radius: 50%;
+    transform: rotate(360deg);
+    transition: 0.5s transform;
+    left: 35%;
+    position: absolute;
+} 
+
+
+
+.profileheader > form {
+    width: 30%;
+}
+
+.profileheader > form > button {
+    width: 15%;
+    position: absolute;
+    /* border: 1px solid white; */
+    left: 82%;
+    top: 2%;
+    margin: 0;
+    padding: 5px;
+    box-shadow: 2px 2px 3px black;
+    background: rgb(231, 186, 202);
+}
+
+.profileheader > form > button > img {
+    width: 100%;
+}
+.profileheader > form > button > img:hover {
+    fill: red;
+}
+
+.wrapper{
+    position: relative;
+    margin-top: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: remy(320px);
+    background: #fff;
+    box-shadow: 3px 3px 32px rgba(0, 0, 0, 0.25);
+    perspective: 1000;
+    height: 100%;
+    border-radius: 10px;
+    /* padding-bottom: 152px */
+}
+
+
+/* @media only screen and (min-width: 600px) {
+    body {
+        background-image: url("../img/background2.jpg");
+        background-size: 110%;
+        background-repeat: no-repeat;
+
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        
+    }
+
+    .wrapper {
+        width: 100vw;
+
+    }
+
+    main {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+} */
+
+
+
+
+
+
+/* source: https://blog.alexdevero.com/flipping-login-signup-form-css/ */
+
+form {
+    margin: 10px 0px;
+    height: 80%;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    text-align: center;
+}
+
+.inlog label{
+    font-family: 'Kalam';
+    font-size: 1.5rem;
+
+}
+
+
+/********************
+    form profile page
+********************/
+
+.profileform{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+/********************
+    MULTI STEP FORM
+********************/
+
+.registratepage fieldset{
+    margin: 15px auto;
+    display: none;
+}
+
+.registratepage fieldset label{
+    display: block;
+    padding-top: 26px;
+    font-size: 25px;
+    font-family: 'Kalam';
+
+}
+.registratepage fieldset .man, .registratepage fieldset .vrouw, .registratepage fieldset .beide{
+    font-family: omnes-pro, sans-serif;
+    display: inline;
+    /* background-color: red; */
+    padding: 4px;
+    padding-top: 12px;
+    margin: auto;
+    margin-bottom: 18px;
+    font-size: 1.4rem;
+}
+
+.registratepage fieldset input{
+    /* width: 96%; */
+    border-bottom: 1px solid rgb(255, 0, 0);
+    /* margin-left: 20px; */
+    font-family: omnes-pro, sans-serif;
+    padding-bottom: 0px;
+}
+
+.registratepage fieldset input::placeholder{
+    font-family: omnes-pro, sans-serif;
+    line-height: 50px;
+}
+
+.registratepage button{
+    margin: 20px;
+    padding: 10px;
+    width: 100px;
+    font-family: omnes-pro, sans-serif;
+    border: none;
+    cursor: pointer;
+}
+.registratepage fieldset input[type="radio"]{
+    display: inline-flex;
+    width: 20px;
+}
+
+.registratepage .optionphoto{
+    padding: 0px;
+}
+
+.registratepage .optionphoto img, .registratepage fieldset p{
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.registratepage .optionphoto img{
+    width: 25%;
+    height: 55%;
+}
+
+.registratepage .optionphoto p{
+    width: 92%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: auto;
+}
+
+
+.registratepage .optionphoto .fileContainer{
+    overflow: hidden;
+    position: relative;
+}
+    
+.registratepage .optionphoto .file {
+    cursor: pointer;
+    /* display: inline; */
+    font-size: 12px;
+    filter: alpha(opacity=0);
+    /* min-height: 100%; */
+    /* min-width: 100%; */
+    opacity: 1;
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    text-align: center;
+    /* top: 0; */
+    padding: 52px;
+    width: 80vw;
+    margin: auto;
+}
+
+
+
+.registratepage ul{
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    float: right;
+    position: absolute;
+
+}
+
+.registratepage ul li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #b3b3b3;
+    margin: 2px 5px;
+    display: inline-flex;
+    /* border: 1px solid rgb(133, 126, 126); */
+}
+
+
+
+
+.registratepage fieldset input[type="radio"]{
+    /* position: absolute;
+    opacity: 20;
+    cursor: pointer;
+    height: 25px;
+    width: 21px;
+    background-color: red; */
+    /* margin-left: 50px; */
+
+        /* position: absolute; */
+        opacity: 20;
+        cursor: pointer;
+        height: 25px;
+        width: 21px;
+        background-color: red;
+        /* margin-left: 50px; */
+        /* margin-bottom: 14px;*/
+
+}
+
+
+  .registratepage fieldset input[type="radio"]:focus{
+     box-shadow: none;
+    }
+
+
+
+
+
+
+fieldset.p1{
+    border: none;
+    display: flex;
+    text-align: left;
+    display: flex;
+}
+
+fieldset.p1 input::placeholder{
+    color: rgba(92, 92, 92, 0.5);
+}
+
+legend{
+    display: none;
+}
+
+/* label:first-child, label:nth-child(2), label:nth-child(3), label:nth-child(4), label:nth-child(5), label:nth-child(14){
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Kalam';
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 1.6rem;
+    text-align: center;
+    letter-spacing: 1px;
+} */
+
+
+
+
+
+
+input[type="radio"].toggle {
+  display: none;
+}
+
+
+form.p2 fieldset label{
+    max-width: 70%;
+    text-align: center;
+    /* background: red; */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0px 10px 0px;
+    padding: 50px 0px 5px 0px;
+    border: 1px solid transparent;
+    /* border-bottom: 1px solid #FD2755; */
+    font-size: 1.7rem;
+    cursor: pointer;
+    /* font-family:omnes-pro, sans-serif; */
+    font-weight: 200;
+    margin: 0 auto;
+    /* margin:10px 0px; */
+    
+}
+form.p2 fieldset label:nth-child(6){
+    max-width: 70%;
+    text-align: center;
+    /* background: red; */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0px 10px 0px;
+    padding: 50px 0px 5px 0px;
+    border: 1px solid transparent;
+    /* border-bottom: 1px solid #FD2755; */
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-family:'Kalam';
+    font-weight: 200;
+    margin: 0 auto;
+    /* margin:10px 0px; */
+    
+}
+
+
+
+
+form fieldset input{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    background: transparent;
+    border: none;
+    border: 1px solid transparent;
+    padding: 5px 0px 5px 5px;
+    border-bottom: 1px solid #FD2755;
+    font-size: 1rem;
+}
+form fieldset.p1 {
+    margin: 0px 20px;
+}   
+
+form fieldset.p1 .firsttype{
+    text-align: left;
+    /* background: blue; */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 5px 50px 10px 5px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #FD2755;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+
+
+
+form fieldset.p1 input[type="radio"]{
+  position: absolute;
+  opacity: 20;
+  cursor: pointer;
+  height: 25px;
+  width: 21px;
+  background-color: red;
+  margin-left: 50px;
+}
+form fieldset.p1 input[type="radio"]:focus{
+   box-shadow: none;
+  }
+
+
+form.p2 fieldset input{
+    text-align: left;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin: 0; */
+    padding: 5px 50px 10px 5px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #FD2755;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+
+
+form.p2 fieldset input:focus{
+    border: 1px solid #FD2755;
+    outline: none;
+    transition: ease-in-out 0.3s;
+}
+
+form.p2 fieldset input::placeholder{
+    color: rgba(92, 92, 92, 0.5);
+}
+
+/* pseudo class voor interactie */
+form input:focus{
+    border: 1px solid #FD2755;
+    outline: none;
+    transition: ease-in-out 0.3s;
+}
+
+form input.firsttype:focus{
+    border: 1px solid #FD2755;
+    outline: none;
+    transition: ease-in-out 0.3s;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .wrapper{
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 30%;
+        /* width: 100%; */
+        /* padding: 0px 10px; */
+    }
+
+    form{
+        width: 30%;
+        height: 50%;
+    }
+    form.p2{
+        display: flex;
+    }
+    form.p2 fieldset {
+        margin-left: 68%;
+        width: 30%;
+        text-align: left;
+        /* background: blue; */
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        /* margin: 0; */
+        padding: 5px 50px 10px 5px;
+        /* border: 1px solid black; */
+        border-radius:10px;
+        box-shadow:  3px 3px 3px 3px #ccc;
+        /* 0 2px 7px 0 rgba(0,0,0,0.2) */
+        background: white;
+        font-size: 1rem;
+        cursor: pointer;
+    } 
+    
+
+
+}
+
+/* .inlog input:focus {
+    top:  -5px;
+    font-size:1.2rem;
+    transform: translateY(-50%);
+} */
+
+
+
+button{
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 3px 3px 5px grey;
+    background-color: #FA2760;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-family: omnes-pro, sans-serif;
+}
+
+a {
+    font-size: 1rem;
+}
+
+.line{
+    border-bottom: 1px grey;
+    width: 50px;
+}
+
+
+h2{
+    font-family: 'Kalam';
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+h2.error{
+    font-family: omnes-pro, sans-serif;
+    font-weight: 500;
+}
+
+
+.optionphoto{
+    display: flex;
+    max-width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 3px 3px 10px grey;
+    padding: 9px 0px;
+}
+
+
+/* .optionphoto input[type="file"]{ */
+    /* border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer; */
+
+    /* content: 'Select some files';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 3px solid red ;
+    border-radius: 3px;
+    padding: 5px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+    width: 50%;
+    margin: 30px 0px;
+    padding: 0px; */
+    
+/* } */
+
+
+.optionphoto img, .optionphoto p{
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.optionphoto img{
+    width: 20%;
+    height: 20%;
+}
+
+.optionphoto p{
+    width: 92%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: auto;
+}
+
+.fileContainer{
+    overflow: hidden;
+    position: relative;
+}
+    
+.file {
+    cursor: inherit;
+    display: block;
+    font-size: 50px;
+    filter: alpha(opacity=0);
+      /* min-height: 100%; */
+    /* min-width: 100%; */
+    opacity: 0;
+    position: absolute;
+     /* right: 0; */
+        text-align: right;
+    /* top: 0; */
+}
+
+
+.renderedphoto{
+    min-width: 25%;
+    /* width: 10px; */
+    height: 10px;
+    list-style-type: none;
+    color:blue;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    border: 1px solid red;
+    /* padding: 48px; */
+    /* margin: 8px; */
+    border-radius: 10px;
+
+    margin: auto;
+    width: 50%;
+    padding: 64px;
+    margin-top: 20px;
+
+ }
+
+p a{
+    margin-bottom: 100px;
+}
+.passwordforgot{
+font-size: 1.2rem;
+/* text-decoration:red; */
+}
+
+.errorlogo{
+    margin-bottom: 100px;
+    width: 80%;
+}
+
+@media only screen and (min-width: 600px) {
+
+
+
+}
+
+.registreer{
+    background-color: #FA4E69;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 10px 40px;
+    width: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    box-shadow: 3px 3px 5px grey;
+
+}
+/* p{
+    margin: 0;
+    padding: 0;
+    display: inline;
+} */
+
+.buttons{
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+a.back, a.next{
+    background-color: #FA4E69;
+    border-radius: 10px;
+    margin: 0;
+    padding: 10px;
+    width: 20%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    box-shadow: 3px 3px 5px grey;
+    margin: 25px 50px 6px 50px;
+}
+
+a.next, a.back{
+display: inline-block;
+}
+
+a.back{
+    background-color: rgb(250, 116, 136);
+
+}
+
+a.begin{
+    background-color: #FA4E69;
+    border-radius: 10px;
+    margin: 1000px 50px;
+    padding: 10px;
+    /* width: 50%; */
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    box-shadow: 3px 3px 5px grey;
+    /* display: inline; */
+}
+
+
+.logo{
+    width: 80%;
+    margin: 0px;
+    margin-bottom: 150px;
+
+}
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gpp7dbn.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap:300,400,700" rel="stylesheet">
+    <link rel='icon' href='../static/img/favicon.ico' type='image/x-icon'/ >    
+    <title>Profiel</title>
+</head>
+
+<body>
+    <div class="wrapper">
+     <header class="profileheader" >
+        <p>Hey Ralf !</p>
+            <img src="img/profielfoto.jpeg" alt=""> 
+            <form action="index.html" method="POST">
+                <button type="submit">
+                    <img src="img/logoutbutton.svg" alt="">
+                </button>
+            </form>
+     </header>
+
+    <main>
+        <form class="profileform" action="profile.html">
+        <legend>Wie ben jij?</legend>
+        <label for="firstName">Voornaam</label>
+        <input class="firsttype" type="text" name="firstName" placeholder="Voornaam" required>
+
+
+        <label for="age">Leeftijd</label>
+        <input type="number" name="age" placeholder="Leeftijd" required>
+
+
+        <label for="hometown">Plaatsnaam</label>
+        <input type="text" name="hometown" placeholder="Plaatsnaam" required>
+
+
+        <label for="gender">Geslacht</label><
+
+        <input type="radio" name="gender" value="man" checked="checked" required>
+        <label class="man" for="man">Man</label>
+        <span class="checkmark"></span>
+
+        <input type="radio" name="gender" value="vrouw" required>
+        <label for="vrouw">Vrouw</label>
+        <span class="checkmark"></span>
+
+        <input type="radio" name="gender" value="beide" required>
+        <label for="beide">Beide</label>
+        <span class="checkmark"></span>
+
+        
+        <label for="searchSex">Zoekt naar</label>
+
+        <input type="radio" name="searchSex" value="man" checked="checked" required>
+        <label for="man">Man</label>
+        <span class="checkmark"></span>
+
+        <input type="radio" name="searchSex" value="vrouw" required>
+        <label for="vrouw">Vrouw</label>
+        <span class="checkmark"></span>
+
+        <input type="radio" name="searchSex" value="beide" required>
+        <label for="beide">Beide</label>
+        <span class="checkmark"></span>
+
+
+        <label for="email">E-mail</label>
+        <input type="text" name="email" placeholder="E-mailadres" required>
+
+        <label for="password">Wachtwoord</label>
+        <input type="password" name="password" placeholder="Password" required>
+        <a class="next" href="profile.html">Edit</a>
+    </form>
+    </main>
+
+    </div>
+ 
+</body>
+
+</html>

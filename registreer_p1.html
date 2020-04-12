@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gpp7dbn.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap:300,400,700" rel="stylesheet">
+    <link rel='icon' href='../static/img/favicon.ico' type='image/x-icon'/ >
+    <title>Register-page-1</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+    <header>
+         <h1>Welkom</h1>
+         <h2 class="ondertitel">Wij zijn benieuwd wie je bent.</h2>
+    </header>
+
+    <main>
+
+    <form class="registratepage" action="registrate" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <label for="firstName">Ik ben</label>
+            <input class="firsttype" type="text" name="firstName" placeholder="Voornaam" required>
+
+            <span></span>            
+            <label for="gender">en ben een</label>
+
+            <input type="radio" name="gender" value="man" checked="checked" required>
+            <label class="man" for="man">Man</label>
+            <span class="checkmark"></span>
+
+
+            <input type="radio" name="gender" value="vrouw" required>
+            <label class="vrouw" for="vrouw">Vrouw</label>
+            <span class="checkmark"></span>
+
+
+            <input type="radio" name="gender" value="beide" required>
+            <label class="beide" for="beide">Beide</label>
+            <span class="checkmark"></span>
+
+
+            
+            <label for="searchSex">en ben op zoek naar een</label>
+
+            <input type="radio" name="searchSex" value="man" checked="checked" required>
+            <label class="man" for="man">Man</label>
+            <span class="checkmark"></span>
+
+
+            <input type="radio" name="searchSex" value="vrouw" required>
+            <label class="vrouw" for="vrouw">Vrouw</label>
+            <span class="checkmark"></span>
+
+
+            <input type="radio" name="searchSex" value="beide" required>
+            <label class="beide" for="beide">Beide</label>
+            <span class="checkmark"></span>
+        </fieldset>
+
+
+        <fieldset>
+            <label for="age">Hoe oud ben je?</label>
+            <input type="number" name="age" placeholder="Leeftijd" required>
+
+            <label for="hometown">Waar woon je?</label>
+            <input type="text" name="hometown" placeholder="Plaatsnaam" required>
+
+            <label for="email">Wat is je e-mail?</label>
+            <input type="text" name="email" placeholder="E-mailadres" required>
+            
+            <label for="password">Maak een wachtwoord aan</label>
+            <input type="password" name="password" placeholder="Wachtwoord" required>
+        </fieldset>
+
+
+        <fieldset>
+          <div class="optionphoto">
+            <label class="fileContainer" for="">
+                <input class="file" type="file" name="photo" accept="image/*;capture=camera">
+                <img src="../static/img/gallery.png" alt="">
+                <p>Upload foto</p>
+            </label>
+          </div>  
+            <img class="renderedphoto" src=" " alt="foto1">
+
+        </fieldset>
+        <form action="registreer_p4.html">
+            <button class="back" name="back">Terug</button>
+            <button class="next" name="next">Verder</button>
+        </form>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </form>
+
+
+   
+
+    </main>
+
+</div>
+
+<script type= "text/javascript" src='script.js'></script>
+
+</body>
+
+</html>
