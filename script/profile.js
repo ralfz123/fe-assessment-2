@@ -11,4 +11,13 @@
 // }
 
 // var enableButton = document.getElementsByClassName('enableButton');
-console.log('Hello world!')
+
+// enableButton.addEventListener("click", disableWeg);
+
+
+
+document.getElementById('enableButton').onclick = function() {disableWeg()};
+
+function disableWeg() {
+    console.log("geklikt")
+} 
