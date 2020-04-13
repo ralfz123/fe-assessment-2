@@ -1,32 +1,4 @@
-//     var remove = document.getElementById('js-remove')
-
-// if (remove){
-//     remove.addEventListener('click', onremove)
-// }
-
-// function onremove(ev){
-//     var node = ev.target
-//     var id  = node.dataset.id
-    
-//     fetch('/' + id, {method: 'delete'})
-//         .then(onresponse)
-//         .then(onload, onfail)
-
-//     function onresponse(res){
-//         return res.json()
-//     }
-
-//     function onload(){
-//         window.location = '/'
-//     }
-
-//     function onfail(){
-//         throw new Error('Could not delete!')
-//     }
-
-// }
-
-// Beschrijven wat er gebeurd
+// Variable declarations
 var fieldset = document.getElementsByTagName('fieldset');
 var button = document.getElementsByTagName('button');
 // var buttonOne = document.getElementsByClassName("back");
@@ -36,7 +8,7 @@ var form = document.getElementsByTagName('form');
 form.onsubmit =()=>{return false};
 
 
-// Beschrijven wat er gebeurd
+// Functions
 var current_fieldset = 0;
 fieldset[current_fieldset].style.display = "block";
 if (current_fieldset == 0){

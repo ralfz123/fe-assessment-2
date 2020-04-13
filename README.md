@@ -1,4 +1,6 @@
 # Find Your Match! ❤️
+<img src="https://raw.githubusercontent.com/ralfz123/fe-assessment-2/master/img/design_mockup2.png" width="1000" />
+
 This feature is Progressively Enhanced.  
 It's built with HTML, CSS and JavaScript.  
 
