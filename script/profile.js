@@ -10,6 +10,10 @@ enableButton.onclick = () => {
         if (inputs[i].type == 'text' || inputs[i].type == 'password' || inputs[i].type == 'number' || inputs[i].type == 'radio') {
             inputs[i].disabled = false;
             console.log('Removed "disabled"');
+            enableButton.innerHTML = 'Opslaan';
+        } else {
+            enableButton.innerHTML = 'Edit';
+            // console.log('weer terug')
         }
     }
 }
