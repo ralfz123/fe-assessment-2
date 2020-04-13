@@ -56,7 +56,41 @@ button[0].onclick = ()=>{
         // button[0].style.display = "none";
         
     }
-    // if (current_fieldset <= 0){
-    //     location.href = ('/');
-    // }
 }
+
+// Wanneer user alleen op fieldset[0] is en naar home wilt gaan.
+button[0].addEventListener('click', function home() {
+    if (current_fieldset == 0) {
+        if (button[0].onclick = function goHome(){
+            location.href = ('index.html')
+        });
+    }
+});
+
+
+
+
+
+
+// // Variabelen declareren
+// const persoonsgegevens = document.getElementById('infoNummerEen');
+// const accountgegevens = document.getElementById('infoNummerTwee');
+// const buttonNext = document.getElementById('next');
+// const buttonTerug = document.getElementById('back');
+// const form = document.getElementById('registratepage');
+
+
+// // Wanneer buttonNext wordt geklikt
+// buttonNext.addEventListener('click', function(e) {
+//     e.preventDefault;
+//     accountgegevens.style.display = 'block';
+//     persoonsgegevens.style.display = 'none';
+//     console.log(persoonsgegevens);
+// });
+
+// buttonTerug.addEventListener('click', function(e) {
+//     e.preventDefault;
+//     accountgegevens.style.display = 'none';
+//     persoonsgegevens.style.display = 'block';
+//     console.log(persoonsgegevens);
+// });

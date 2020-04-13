@@ -23,7 +23,7 @@
     <main>
 
     <form class="registratepage" action="registrate" method="POST" enctype="multipart/form-data">
-        <fieldset>
+        <fieldset id="infoNummerEen">
             <label for="firstName">Ik ben</label>
             <input class="firsttype" type="text" name="firstName" placeholder="Voornaam" required>
 
@@ -61,10 +61,11 @@
             <input type="radio" name="searchSex" value="beide" required>
             <label class="beide" for="beide">Beide</label>
             <span class="checkmark"></span>
+            
         </fieldset>
 
 
-        <fieldset>
+        <fieldset id="infoNummerTwee">
             <label for="age">Hoe oud ben je?</label>
             <input type="number" name="age" placeholder="Leeftijd" required>
 
