@@ -39,7 +39,7 @@ button[1].onclick = ()=>{
              if (current_fieldset == 2){
                 button[1].innerHTML = "Submit";
                 button[1].setAttribute("type", "submit")
-                // // form.onsubmit =()=>{return true};
+                // form.onsubmit =()=>{return true};
              }
  
     } else {
