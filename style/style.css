@@ -436,7 +436,7 @@ fieldset {
     text-align: center;
     float: right;
     position: absolute;
-
+    background: blue;
 }
 
 .registratepage ul li{
@@ -449,7 +449,23 @@ fieldset {
     /* border: 1px solid rgb(133, 126, 126); */
 }
 
+.procesbalk {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    float: right;
+    position: absolute;
+    /* background: blue; */
+}
 
+.procesbalk li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #b3b3b3;
+    margin: 2px 5px;
+    display: inline-flex;
+}
 
 
 .registratepage fieldset input[type="radio"]{
