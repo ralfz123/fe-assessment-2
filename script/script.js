@@ -15,6 +15,17 @@ if (current_fieldset == 0){
     button[0].style.display = "inline";
 
 }
+
+// if (current_fieldset == 2){
+//     button[1].innerHTML = "Submit";
+//     button[1].setAttribute("type", "submit")
+//     // form.onsubmit =()=>{return true};
+// } else {
+//     button[1].innerHTML = "Verder";
+//     button[1].setAttribute("type", "submit")
+//     // form.onsubmit =()=>{return true};
+// }
+
 // When the right button ('Verder') gets hit
 button[1].onclick = ()=>{
     current_fieldset++;
@@ -26,13 +37,13 @@ button[1].onclick = ()=>{
             li[current_fieldset].style.backgroundColor = "red";
             li[back_fieldset].style.backgroundColor = "#b3b3b3";
              if (current_fieldset == 2){
-                 button[1].innerHTML = "Submit";
+                button[1].innerHTML = "Submit";
+                button[1].setAttribute("type", "submit")
+                // // form.onsubmit =()=>{return true};
              }
  
     } else {
-        if (current_fieldset > 2){
-            form.onsubmit =()=>{return true};
-        }
+        
     }
 }
 
@@ -47,6 +58,8 @@ button[0].onclick = ()=>{
              li[back_fieldset].style.backgroundColor = "#b3b3b3";
                 if (current_fieldset < 2){
                  button[1].innerHTML = "Verder";
+                 button[1].setAttribute("type", "button")
+
              }
 
     }

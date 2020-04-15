@@ -426,6 +426,8 @@ fieldset {
     padding: 52px;
     width: 80vw;
     margin: auto;
+    border: none;
+    opacity: 0;
 }
 
 .procesbalk {
@@ -707,6 +709,7 @@ h2.error{
      /* right: 0; */
         text-align: right;
     /* top: 0; */
+    border: none;
 }
 
 

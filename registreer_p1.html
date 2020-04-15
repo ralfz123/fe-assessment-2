@@ -22,7 +22,7 @@
 
     <main>
 
-    <form class="registratepage" action="registrate" method="POST" enctype="multipart/form-data">
+    <form class="registratepage" action="registreer_p4.html" method="get" enctype="multipart/form-data">
         <fieldset id="infoNummerEen">
             <label for="firstName">Ik ben</label>
             <input class="firsttype" type="text" name="firstName" placeholder="Voornaam" required>
@@ -32,36 +32,24 @@
 
             <input type="radio" name="gender" value="man" checked="checked" required>
             <label class="man" for="man">Man</label>
-            <span class="checkmark"></span>
-
 
             <input type="radio" name="gender" value="vrouw" required>
             <label class="vrouw" for="vrouw">Vrouw</label>
-            <span class="checkmark"></span>
-
 
             <input type="radio" name="gender" value="beide" required>
             <label class="beide" for="beide">Beide</label>
-            <span class="checkmark"></span>
-
 
             
             <label for="searchSex">en ben op zoek naar een</label>
 
             <input type="radio" name="searchSex" value="man" checked="checked" required>
             <label class="man" for="man">Man</label>
-            <span class="checkmark"></span>
-
 
             <input type="radio" name="searchSex" value="vrouw" required>
             <label class="vrouw" for="vrouw">Vrouw</label>
-            <span class="checkmark"></span>
-
 
             <input type="radio" name="searchSex" value="beide" required>
-            <label class="beide" for="beide">Beide</label>
-            <span class="checkmark"></span>
-            
+            <label class="beide" for="beide">Beide</label>            
         </fieldset>
 
 
@@ -83,8 +71,8 @@
         <fieldset>
           <div class="optionphoto">
             <label class="fileContainer" for="">
-                <input class="file" type="file" name="photo" accept="image/*;capture=camera">
-                <img src="../static/img/gallery.png" alt="">
+                <input class="file" type="file" name="photo" accept="image/*;capture=camera" required>
+                <img src="img/gallery.png" alt="">
                 <p>Upload foto</p>
             </label>
           </div>  
