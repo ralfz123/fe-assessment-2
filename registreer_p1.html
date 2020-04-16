@@ -24,6 +24,7 @@
 
     <form class="registratepage" action="registreer_p4.html" method="get" enctype="multipart/form-data">
         <fieldset id="infoNummerEen">
+            <legend>Wie ben jij?</legend>
             <label for="firstName">Ik ben</label>
             <input class="firsttype" type="text" name="firstName" placeholder="Voornaam" required>
 
@@ -54,6 +55,7 @@
 
 
         <fieldset id="infoNummerTwee">
+            <legend>Persoonlijke gegevens</legend>
             <label for="age">Hoe oud ben je?</label>
             <input type="number" name="age" placeholder="Leeftijd" required>
 
@@ -68,7 +70,8 @@
         </fieldset>
 
 
-        <fieldset>
+        <fieldset id="infoNummerDrie">
+            <legend>Foto uploaden</legend>
           <div class="optionphoto">
             <label class="fileContainer" for="">
                 <input class="file" type="file" name="photo" accept="image/*;capture=camera" required>
@@ -79,9 +82,10 @@
             <img class="renderedphoto" src=" " alt="foto1">
 
         </fieldset>
-        <form action="registreer_p4.html">
-            <button class="back" name="back">Terug</button>
-            <button class="next" name="next">Verder</button>
+        <button class="back" name="back">Terug</button>
+
+        <form action="registreer_p4.html" method="GET">
+            <button type="submit" class="next" name="next">Submit</button>
         </form>
         <ul class="procesbalk">
             <li></li>

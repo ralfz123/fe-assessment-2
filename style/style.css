@@ -171,7 +171,7 @@ h4{
     perspective: 1000;
     height: 100%;
     border-radius: 10px;
-    height: 89vh;
+    /* height: 89vh; */
     /* padding-bottom: 152px */
 }
 
@@ -353,7 +353,7 @@ fieldset {
 
 .registratepage fieldset{
     margin: 15px auto;
-    display: none;
+    display: block;
 }
 
 .registratepage fieldset label{
@@ -399,6 +399,7 @@ fieldset {
     bottom: 10px;
     left: 50%;
     */
+    display: inline;
 } 
 
 .registratepage fieldset input[type="radio"]{
@@ -454,6 +455,7 @@ fieldset {
 }
 
 .procesbalk {
+    /* display: none; */
     width: 100%;
     margin: 20px auto;
     text-align: center;
@@ -463,6 +465,7 @@ fieldset {
 }
 
 .procesbalk li {
+    /* display: none; */
     width: 20px;
     height: 20px;
     border-radius: 50%;

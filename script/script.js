@@ -5,6 +5,10 @@ var li = document.getElementsByTagName('li');
 var form = document.getElementsByTagName('form');
 form.onsubmit = () => { return false };
 
+button[1].innerHTML = "Verder"
+
+fieldset[1].style.display = "none";
+fieldset[2].style.display = "none";
 
 // When the current fieldset is equal to 0, then:
 var current_fieldset = 0;
