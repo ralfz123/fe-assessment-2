@@ -43,7 +43,7 @@ body {
         overflow: hidden;
         margin: 0;
         padding: 0;
-        width: 100vw;
+        /* width: 100vw; */
         
     }
 
@@ -192,7 +192,7 @@ h4{
 
 
 
-/* @media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
     body {
         background-image: url("../img/background2.jpg");
         background-size: 110%;
@@ -209,12 +209,28 @@ h4{
 
     }
 
+    .wrapperInlogProfile{
+        position: relative;
+        margin-top: 0.5rem;
+        margin-right: auto;
+        margin-left: auto;
+        width: remy(320px);
+        background: #fff;
+        box-shadow: 3px 3px 32px rgba(0, 0, 0, 0.25);
+        perspective: 1000;
+        height: 100%;
+        border-radius: 10px;
+        width: 30vw;       
+        /* height: 89vh; */
+        /* padding-bottom: 152px */
+    }
+
     main {
         margin: 0;
         padding: 0;
         width: 100vw;
     }
-} */
+}
 
 
 
@@ -777,11 +793,7 @@ font-size: 1.2rem;
     width: 80%;
 }
 
-@media only screen and (min-width: 600px) {
 
-
-
-}
 
 .registreer {
     background-color: #FA4E69;
@@ -853,4 +865,30 @@ a.begin{
 
 }
 
+@media only screen and (min-width: 600px) {
+    a.passwordforgot {
+        margin-right: 63rem;
+    }
+
+    p a.passwordforgot + h2 {
+        margin-right: 63rem;
+    }
+
+    .registreer {
+        margin-right: 65rem;
+    }
+
+    .logo {
+        width: 30%;
+        margin-right: 65rem;
+    }
+
+    h4 {
+        margin-right: 63rem;
+    }
+
+    a.begin {
+        margin-right: 66rem;
+    }
+}
 
