@@ -24,7 +24,7 @@ enableButton.onclick = () => {
                 enableButton.innerHTML = 'Opslaan';
             } else {
                 console.log("Disabled!")
-                enableButton.innerHTML = 'Edit'
+                enableButton.innerHTML = 'Bewerk'
                 inputs[i].disabled = true;
             }
     }
