@@ -1,19 +1,31 @@
 // Variable declarations
-var inputs = document.getElementsByTagName('input');
-var enableButton = document.getElementById('enableButton');
+const enableButton = document.getElementById('enableButton');
+const inputs = document.getElementsByTagName('input')
+
+
+disablen();
+
+function disablen() {
+    var inputs = document.getElementsByTagName("input");
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].disabled = true;
+    }
+}
 
 // Functions
 enableButton.onclick = () => {
     console.log('Clicked')
 
-    for (var i = 0; i < inputs.length; i++) {
-        if (inputs[i].type == 'text' || inputs[i].type == 'password' || inputs[i].type == 'number' || inputs[i].type == 'radio') {
-            inputs[i].disabled = false;
-            console.log('Removed "disabled"');
-            enableButton.innerHTML = 'Opslaan';
-        } else {
-            enableButton.innerHTML = 'Edit';
-            // console.log('weer terug')
-        }
+    for (let i = 0; i < inputs.length; i++) {
+        if (inputs[i].type == 'text' || inputs[i].type == 'password' || inputs[i].type == 'number' || inputs[i].type == 'radio')
+            if (inputs[i].disabled != false) {
+                inputs[i].disabled = false;
+                console.log('Removed "disabled"');
+                enableButton.innerHTML = 'Opslaan';
+            } else {
+                console.log("Disabled!")
+                enableButton.innerHTML = 'Edit'
+                inputs[i].disabled = true;
+            }
     }
 }
