@@ -72,15 +72,23 @@
 
         <fieldset id="infoNummerDrie">
             <legend>Foto uploaden</legend>
-          <div class="optionphoto">
+          <!-- <div class="optionphoto">
             <label class="fileContainer" for="">
                 <input class="file" type="file" name="photo" accept="image/*;capture=camera" required>
                 <img src="img/gallery.svg" alt="">
                 <p>Upload foto</p>
             </label>
           </div>  
-            <img class="renderedphoto" src=" " alt="foto1">
+            <img class="renderedphoto" src=" " alt="foto1"> -->
 
+            <input type="file" id="inputFile">
+            <div class="optionphoto" id="imagePreview">
+                <img src="" alt="Image Preview" class="image-preview__image">
+                <span class="image-preview__default-text">Image Preview</span>
+            </div>
+
+
+<!-- bron: https://www.youtube.com/watch?v=VElnT8EoEEM&t=3s -->
         </fieldset>
         <button class="back" name="back">Terug</button>
 

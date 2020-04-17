@@ -56,3 +56,30 @@ button[0].onclick = () => {
         });
     };
 };
+
+const inputFile = document.getElementById("inputFile");
+const previewContainer = document.getElementById("imagePreview");
+const previewImage = document.querySelector(".image-preview__image");
+const previewDefaultText = previewContainer.querySelector(".image-preview__default-text");
+
+inputFile.addEventListener("change" , function() {
+    const file = this.files[0];
+    console.log(file);
+
+    if (file) {
+        const reader = new FileReader();
+
+        previewDefaultText.style.display = "none"; 
+        previewImage.style.display = "block";
+
+        reader.addEventListener("load", function() {
+            console.log(this);
+            previewImage.setAttribute("src", this.result);
+        });
+        reader.readAsDataURL(file);
+    } else {
+        previewDefaultText.style.display = null; // This line code says 'null', so it says that it has to activate the default (css properties)
+        previewImage.style.display = null;
+        previewImage.setAttribute("src", "");
+    }
+})
