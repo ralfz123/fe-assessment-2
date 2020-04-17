@@ -1,8 +1,8 @@
 // Declare variables
-var fieldset = document.getElementsByTagName('fieldset');
-var button = document.getElementsByTagName('button');
-var li = document.getElementsByTagName('li');
-var form = document.getElementsByTagName('form');
+let fieldset = document.getElementsByTagName('fieldset');
+let button = document.getElementsByTagName('button');
+let li = document.getElementsByTagName('li');
+const form = document.getElementsByTagName('form');
 
 button[1].innerHTML = "Verder"; // Changes from "Submit" to "Verder", because JS is now included (Progressive Enhancement)
 
@@ -10,7 +10,7 @@ fieldset[1].style.display = "none"; // This fieldset is hidden, because the prin
 fieldset[2].style.display = "none"; // This fieldset is hidden, because the principle Progressive Disclosure
 
 // When the current fieldset is equal to 0, then:
-var current_fieldset = 0;
+let current_fieldset = 0;
 fieldset[current_fieldset].style.display = "block";
 if (current_fieldset == 0) {
     li[0].style.backgroundColor = "red"; // The first bullet of the procesbar gets a red color
@@ -20,7 +20,7 @@ if (current_fieldset == 0) {
 // When the right button ('Verder') gets hit
 button[1].onclick = () => {
     current_fieldset++;
-    var back_fieldset = current_fieldset - 1;
+    let back_fieldset = current_fieldset - 1;
     if ((current_fieldset > 0) && (current_fieldset < 3)) {
         fieldset[current_fieldset].style.display = "block"; // This fieldset is now visible
         fieldset[back_fieldset].style.display = "none"; // This fieldset is now invisible
@@ -38,7 +38,7 @@ button[1].onclick = () => {
 button[0].onclick = () => {
     if (current_fieldset > 0) {
         current_fieldset--;
-        var back_fieldset = current_fieldset + 1;
+        let back_fieldset = current_fieldset + 1;
         fieldset[current_fieldset].style.display = "block"; // This fieldset is now visible
         fieldset[back_fieldset].style.display = "none"; // This fieldset is now invisible
         li[current_fieldset].style.backgroundColor = "red"; // The current bullet of the procesbar gets a red color
