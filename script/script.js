@@ -1,8 +1,8 @@
 // Declare variables
-let fieldset = document.getElementsByTagName('fieldset');
-let button = document.getElementsByTagName('button');
-let li = document.getElementsByTagName('li');
-const form = document.getElementsByTagName('form');
+var fieldset = document.getElementsByTagName('fieldset');
+var button = document.getElementsByTagName('button');
+var li = document.getElementsByTagName('li');
+var form = document.getElementsByTagName('form');
 const inputFile = document.getElementById("inputFile");
 const previewContainer = document.getElementById("imagePreview");
 const previewImage = document.querySelector(".image-preview__image");
@@ -29,7 +29,6 @@ inputFile.addEventListener("change" , function() {
             previewImage.setAttribute("src", this.result);
         });
         reader.readAsDataURL(file);
-        button[1].setAttribute("type", "submit"); // Form can be submit
 
     } else {
         previewDefaultText.style.display = null; // This line code says 'null', so it says that it has to activate the default (css properties)
@@ -39,7 +38,7 @@ inputFile.addEventListener("change" , function() {
 });
 
 // When the current fieldset is equal to 0, then:
-let current_fieldset = 0;
+var current_fieldset = 0;
 fieldset[current_fieldset].style.display = "block";
 if (current_fieldset == 0) {
     li[0].style.backgroundColor = "red"; // The first bullet of the procesbar gets a red color
@@ -49,7 +48,7 @@ if (current_fieldset == 0) {
 // When the right button ('Verder') gets hit
 button[1].onclick = () => {
     current_fieldset++;
-    let back_fieldset = current_fieldset - 1;
+    var back_fieldset = current_fieldset - 1;
     if ((current_fieldset > 0) && (current_fieldset < 3)) {
         fieldset[current_fieldset].style.display = "block"; // This fieldset is now visible
         fieldset[back_fieldset].style.display = "none"; // This fieldset is now invisible
@@ -57,6 +56,7 @@ button[1].onclick = () => {
         li[back_fieldset].style.backgroundColor = "#b3b3b3";
         if (current_fieldset == 2) {
             button[1].innerHTML = "Submit"; // Button text is changed to "Submit", because you can literally submit the form
+            button[1].setAttribute("type", "submit"); // Form can be submit
         };
     };
 };
@@ -66,7 +66,7 @@ button[1].onclick = () => {
 button[0].onclick = () => {
     if (current_fieldset > 0) {
         current_fieldset--;
-        let back_fieldset = current_fieldset + 1;
+        var back_fieldset = current_fieldset + 1;
         fieldset[current_fieldset].style.display = "block"; // This fieldset is now visible
         fieldset[back_fieldset].style.display = "none"; // This fieldset is now invisible
         li[current_fieldset].style.backgroundColor = "red"; // The current bullet of the procesbar gets a red color
