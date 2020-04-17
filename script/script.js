@@ -6,7 +6,7 @@ const form = document.getElementsByTagName('form');
 const inputFile = document.getElementById("inputFile");
 const previewContainer = document.getElementById("imagePreview");
 const previewImage = document.querySelector(".image-preview__image");
-const previewDefaultText = previewContainer.querySelector(".image-preview__default-text");
+const previewDefaultText = document.querySelector(".image-preview__default-text");
 
 button[1].innerHTML = "Verder"; // Changes from "Submit" to "Verder", because JS is now included (Progressive Enhancement)
 
@@ -35,8 +35,8 @@ inputFile.addEventListener("change" , function() {
         previewDefaultText.style.display = null; // This line code says 'null', so it says that it has to activate the default (css properties)
         previewImage.style.display = null;
         previewImage.setAttribute("src", "");
-    }
-})
+    };
+});
 
 // When the current fieldset is equal to 0, then:
 let current_fieldset = 0;
