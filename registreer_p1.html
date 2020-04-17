@@ -8,108 +8,99 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/gpp7dbn.css">
     <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap:300,400,700" rel="stylesheet">
-    <link rel='icon' href='img/favicon.ico' type='image/x-icon'/ >
+    <link rel='icon' href='img/favicon.ico' type='image/x-icon'/>
     <title>Register-page-1</title>
 </head>
 
 <body>
     <div class="wrapper">
 
-    <header>
-         <h1>Welkom</h1>
-         <h2 class="ondertitel">Wij zijn benieuwd wie je bent.</h2>
-    </header>
+        <header>
+            <h1>Welkom</h1>
+            <h2 class="ondertitel">Wij zijn benieuwd wie je bent.</h2>
+        </header>
 
-    <main>
+        <main>
 
-    <form class="registratepage" action="registreer_p4.html" method="get" enctype="multipart/form-data">
-        <fieldset id="infoNummerEen">
-            <legend>Wie ben jij?</legend>
-            <label for="firstName">Ik ben</label>
-            <input class="firsttype" type="text" name="firstName" placeholder="Voornaam" required>
+            <form class="registratepage" action="registreer_p4.html" method="get" enctype="multipart/form-data">
+                <fieldset id="infoNummerEen">
+                    <legend>Wie ben jij?</legend>
+                    <label for="firstName">Ik ben</label>
+                    <input class="firsttype" type="text" name="firstName" placeholder="Voornaam" required>
 
-            <span></span>            
-            <label for="gender">en ben een</label>
+                    <span></span>
+                    <label for="gender">en ben een</label>
 
-            <input type="radio" name="gender" value="man" checked="checked" required>
-            <label class="man" for="man">Man</label>
+                    <input type="radio" name="gender" value="man" checked="checked" required>
+                    <label class="man" for="man">Man</label>
 
-            <input type="radio" name="gender" value="vrouw" required>
-            <label class="vrouw" for="vrouw">Vrouw</label>
+                    <input type="radio" name="gender" value="vrouw" required>
+                    <label class="vrouw" for="vrouw">Vrouw</label>
 
-            <input type="radio" name="gender" value="beide" required>
-            <label class="beide" for="beide">Beide</label>
-
-            
-            <label for="searchSex">en ben op zoek naar een</label>
-
-            <input type="radio" name="searchSex" value="man" checked="checked" required>
-            <label class="man" for="man">Man</label>
-
-            <input type="radio" name="searchSex" value="vrouw" required>
-            <label class="vrouw" for="vrouw">Vrouw</label>
-
-            <input type="radio" name="searchSex" value="beide" required>
-            <label class="beide" for="beide">Beide</label>            
-        </fieldset>
+                    <input type="radio" name="gender" value="beide" required>
+                    <label class="beide" for="beide">Beide</label>
 
 
-        <fieldset id="infoNummerTwee">
-            <legend>Persoonlijke gegevens</legend>
-            <label for="age">Hoe oud ben je?</label>
-            <input type="number" name="age" placeholder="Leeftijd" required>
+                    <label for="searchSex">en ben op zoek naar een</label>
 
-            <label for="hometown">Waar woon je?</label>
-            <input type="text" name="hometown" placeholder="Plaatsnaam" required>
+                    <input type="radio" name="searchSex" value="man" checked="checked" required>
+                    <label class="man" for="man">Man</label>
 
-            <label for="email">Wat is je e-mail?</label>
-            <input type="text" name="email" placeholder="E-mailadres" required>
-            
-            <label for="password">Maak een wachtwoord aan</label>
-            <input type="password" name="password" placeholder="Wachtwoord" required>
-        </fieldset>
+                    <input type="radio" name="searchSex" value="vrouw" required>
+                    <label class="vrouw" for="vrouw">Vrouw</label>
+
+                    <input type="radio" name="searchSex" value="beide" required>
+                    <label class="beide" for="beide">Beide</label>
+                </fieldset>
 
 
-        <fieldset id="infoNummerDrie">
-            <legend>Foto uploaden</legend>
-          <!-- <div class="optionphoto">
-            <label class="fileContainer" for="">
-                <input class="file" type="file" name="photo" accept="image/*;capture=camera" required>
-                <img src="img/gallery.svg" alt="">
-                <p>Upload foto</p>
-            </label>
-          </div>  
-            <img class="renderedphoto" src=" " alt="foto1"> -->
+                <fieldset id="infoNummerTwee">
+                    <legend>Persoonlijke gegevens</legend>
+                    <label for="age">Hoe oud ben je?</label>
+                    <input type="number" name="age" placeholder="Leeftijd" required>
 
-            <input type="file" id="inputFile">
-            <div class="optionphoto" id="imagePreview">
-                <img src="" alt="Image Preview" class="image-preview__image">
-                <span class="image-preview__default-text">Image Preview</span>
-            </div>
+                    <label for="hometown">Waar woon je?</label>
+                    <input type="text" name="hometown" placeholder="Plaatsnaam" required>
+
+                    <label for="email">Wat is je e-mail?</label>
+                    <input type="text" name="email" placeholder="E-mailadres" required>
+
+                    <label for="password">Maak een wachtwoord aan</label>
+                    <input type="password" name="password" placeholder="Wachtwoord" required>
+                </fieldset>
 
 
-<!-- bron: https://www.youtube.com/watch?v=VElnT8EoEEM&t=3s -->
-        </fieldset>
-        <button class="back" name="back">Terug</button>
+                <fieldset id="infoNummerDrie">
+                    <legend>Foto uploaden</legend>
+                    <p>Upload foto</p>
+                    <input type="file" id="inputFile">
+                    <div class="optionphoto" id="imagePreview">
+                        <img src="" alt="Image Preview" class="image-preview__image">
+                        <span class="image-preview__default-text">Image Preview</span>
+                    </div>
+                    <!-- bron: https://www.youtube.com/watch?v=VElnT8EoEEM&t=3s -->
+                </fieldset>
 
-        <form action="registreer_p4.html" method="GET">
-            <button type="submit" class="next" name="next">Submit</button>
-        </form>
-        <ul class="procesbalk">
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </form>
+                <button class="back" name="back">Terug</button>
+
+                <form action="registreer_p4.html" method="GET">
+                    <button type="submit" class="next" name="next">Submit</button>
+                </form>
+                <ul class="procesbalk">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </form>
 
 
-   
 
-    </main>
 
-</div>
+        </main>
 
-<script type= "text/javascript" src='script/script.js'></script>
+    </div>
+
+    <script type="text/javascript" src='script/script.js'></script>
 
 </body>
 

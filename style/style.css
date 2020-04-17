@@ -423,55 +423,39 @@ fieldset {
     width: 20px;
 }
 
-.registratepage .optionphoto{
-    padding: 0px;
-}
-
-.registratepage .optionphoto img, .registratepage fieldset p{
-    flex-wrap: wrap;
-    justify-content: start;
-}
-
-.registratepage .optionphoto img{
-    width: 19%;
-    height: auto;
-    padding: 0px;
-    margin: 0px;
-}
-
-.registratepage .optionphoto p{
+.registratepage #infoNummerDrie p {
     width: 92%;
     font-size: 1.5rem;
     font-weight: 300;
     margin: auto;
+    font-family: 'Kalam';
 }
 
 
-.registratepage .optionphoto .fileContainer{
-   /* overflow: hidden;
-   position: relative; */
-    padding: 0px;
-    margin: 0px;
-}
-    
-.registratepage .optionphoto .file {
-    cursor: pointer;
-    /* display: inline; */
-    font-size: 12px;
-    filter: alpha(opacity=0);
-    /* min-height: 100%; */
-    /* min-width: 100%; */
-    opacity: 1;
-    /* position: absolute; */
-    left: 0;
-    right: 0;
-    text-align: center;
-    /* top: 0; */
-    padding: 44px;
-    width: 80vw;
-    margin: auto;
+
+.registratepage #infoNummerDrie input[type="file"] {
     border: none;
-    opacity: 0;
+}
+
+.registratepage #infoNummerDrie .optionphoto {
+    width: 90vw;
+    height: 40vh;
+    margin: auto;
+    border: 2px solid rgb(200, 200, 200);
+} 
+
+
+.registratepage #infoNummerDrie .optionphoto .image-preview__image {
+    display: none;
+    width: 88.8vw;
+}
+
+.registratepage #infoNummerDrie .optionphoto .image-preview__default-text{
+   margin: auto;
+   width: 100%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: 0.4;
 }
 
 .procesbalk {
@@ -516,7 +500,7 @@ fieldset {
 }
 
 
-  .registratepage fieldset input[type="radio"]:focus{
+.registratepage fieldset input[type="radio"]:focus {
      box-shadow: none;
     }
 
@@ -545,19 +529,9 @@ legend{
 } */
 
 
-
-
-
-
 input[type="radio"].toggle {
   display: none;
 }
-
-
-
-
-
-
 
 
 form fieldset input{
@@ -595,17 +569,6 @@ form fieldset input{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* pseudo class voor interactie */
 form.registratepage input:focus, form.inlog input:focus {
     border: 1px solid #FD2755;
@@ -630,18 +593,8 @@ form.registratepage input:focus, form.inlog input:focus {
         height: 50%;
     }
     
-     
-    
-
 
 }
-
-/* .inlog input:focus {
-    top:  -5px;
-    font-size:1.2rem;
-    transform: translateY(-50%);
-} */
-
 
 
 button {
@@ -683,60 +636,6 @@ h2.error{
 }
 
 
-.optionphoto{
-    /* display: flex; */
-    max-width: 90%;
-    border-radius: 10px;
-    text-align: center;
-    margin: auto;
-    margin-top: 50px;
-    box-shadow: 3px 3px 10px grey;
-    padding: 9px 0px;
-}
-
-
-/* .optionphoto input[type="file"]{ */
-    /* border: 1px solid #ccc;
-    display: inline-block;
-    padding: 6px 12px;
-    cursor: pointer; */
-
-    /* content: 'Select some files';
-    display: inline-block;
-    background: linear-gradient(top, #f9f9f9, #e3e3e3);
-    border: 3px solid red ;
-    border-radius: 3px;
-    padding: 5px;
-    outline: none;
-    white-space: nowrap;
-    -webkit-user-select: none;
-    cursor: pointer;
-    text-shadow: 1px 1px #fff;
-    font-weight: 700;
-    font-size: 10pt;
-    width: 50%;
-    margin: 30px 0px;
-    padding: 0px; */
-    
-/* } */
-
-
-.optionphoto img, .optionphoto p{
-    flex-wrap: wrap;
-    justify-content: start;
-}
-
-.optionphoto img{
-    width: 20%;
-    height: 20%;
-}
-
-.optionphoto p{
-    width: 92%;
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin: auto;
-}
 
 .fileContainer{
     overflow: hidden;
